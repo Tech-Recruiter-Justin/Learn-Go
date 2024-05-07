@@ -1,7 +1,4 @@
-package main
-
-func main() {
-}
+package hello
 
 const (
 	englishGreeting = "Hello, "
