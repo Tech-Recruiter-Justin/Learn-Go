@@ -7,3 +7,15 @@ func Sum(numbers []int) int {
 	}
 	return sum
 }
+
+func SumAll(numbers [][]int, excludeHead bool) []int {
+	var sum []int
+	for _, arr := range numbers {
+		currSum := Sum(arr)
+		if excludeHead {
+			currSum -= arr[0]
+		}
+		sum = append(sum, currSum)
+	}
+	return sum
+}
